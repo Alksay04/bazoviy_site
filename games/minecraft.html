@@ -1,19 +1,45 @@
 <html>
     <head>
         <link rel="stylesheet" href="games.css"/>
+        <style>
+            body {
+                font-family: monospace;
+            }
+        </style>
     </head>
     <body>
         <h1>Minecraft</h1>
-        <div class="gallery">
-            <div class="gallery_current">
-                <img id="mainImage" src="../img/minecraft.jfif">
+        <div class="header_container">
+            <div class="header_info">
+                <div class="header_info_top">
+                    <div class="game_box_art">
+                        <img src="../img/minecraft1.jfif"/>
+                    </div>
+                    <div class="game_brief_description">
+                        <h1>Майнкрафт</h1>
+                        <h3>Год выхода: 2009</h3>
+                        <h3>Разработчик: Mojang</h3>
+                        <div class="pay_button">
+                            <img src="../img/cart1.png">
+                            <h3>Оплатить</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_info_bottom">
+                    <p>Описание</p>
+                </div>
             </div>
-            <div class="gallery_list">
-                <img id="firstImage" class="active" onclick="clickImage(event)" src="../img/minecraft.jfif">
-                <img onclick="clickImage(event)" src="../img/minecraft1.jfif">
-                <img onclick="clickImage(event)" src="../img/minecraft2.jfif">
-                <img onclick="clickImage(event)" src="../img/minecraft1.jfif">
-                <img onclick="clickImage(event)" src="../img/minecraft2.jfif">
+            <div class="gallery">
+                <div class="gallery_current">
+                    <img id="mainImage" src="../img/minecraft.jfif">
+                </div>
+                <div class="gallery_list">
+                    <img id="firstImage" class="active" onclick="clickImage(event)" src="../img/minecraft.jfif">
+                    <img onclick="clickImage(event)" src="../img/minecraft1.jfif">
+                    <img onclick="clickImage(event)" src="../img/minecraft2.jfif">
+                    <img onclick="clickImage(event)" src="../img/minecraft1.jfif">
+                    <img onclick="clickImage(event)" src="../img/minecraft2.jfif">
+                </div>
             </div>
         </div>
     </body>
