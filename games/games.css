@@ -123,3 +123,30 @@ body {
     padding: 8px;
     line-height: 1;
 }
+
+.invisible {
+    display: none;
+}
+
+.tabs_group {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.tabs_group > div {
+    background-color: rgba(0,0,0,0.5);
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 16px;
+    cursor: grab;
+}
+
+.tabs_group > div:hover{
+    color: gray;
+}
+
+.tab_active {
+    background-color: red !important;
+}

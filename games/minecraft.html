@@ -26,7 +26,19 @@
                     </div>
                 </div>
                 <div class="header_info_bottom">
-                    <p>Описание</p>
+                    <div class="tabs_group">
+                        <div class="tab_active" id="firstActiveTab" onclick="clickTab(event)" data-tab-id="tab_desctiption">Описание</div>
+                        <div onclick="clickTab(event)" data-tab-id="tab_system_requirements">Системные требования</div>
+                    </div>
+                    <div id="tab_desctiption">
+                        <p>Minecraft — это открытый мир из кубических блоков, где игроки могут свободно строить и исследовать выдуманные миры.</p>
+                        <p>Здесь нет продуманного сценария или реалистичной графики, но есть большое пространство для фантазии. Нужно добывать ресурсы, строить объекты и укрытия, сражаться с врагами и открывать новые земли.</p>
+                    </div>
+                    <div id="tab_system_requirements" class="invisible">
+                        <p>Операционная система: Windows 9</p>
+                        <p>Оперативная память: 536.870.912 мегабайт</p>
+                        <p>Наличие 4096 гб</p>
+                    </div>
                 </div>
             </div>
             <div class="gallery">
@@ -44,21 +56,7 @@
         </div>
     </body>
     <footer>
-        <script>
-            var lastImageClick = document.getElementById('firstImage')
-            function clickImage(event) {
-                const target = event.target
-                const mainImage = document.getElementById("mainImage")
-
-                const newImageURL = target.getAttribute('src')
-
-                mainImage.setAttribute('src', newImageURL)
-
-                target.classList.add('active')
-                lastImageClick.classList.remove('active')
-                target.classList.add('active')
-                lastImageClick = target
-            }
-        </script>
+        <script src="../js/gallery.js"></script>
+        <script src="../js/tabs.js"></script>
     </footer>
 </html>
